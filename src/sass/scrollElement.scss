@@ -6,7 +6,7 @@
   top: calc(var(--vh, 1vh) * 90);
   left: 50%;
   
-  border: solid #890506;
+  border: solid #f50057;
   border-width: 0 3px 3px 0;  
   padding: 3px; 
 }
@@ -20,14 +20,6 @@
   z-index: 500;
 }
 
-.arrowUp {
-  @extend %arrow;  
-  display: none;
-  top: 2vh;  
-  transform: rotate(225deg);
-  -webkit-transform: rotate(225deg);
-  z-index: 888;
-}
 
 #photoNameScroll{
 

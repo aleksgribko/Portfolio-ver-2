@@ -50,26 +50,6 @@
   font-size: 1.3vmax;
 }
 
-.contactField a, .contactField span {
-  text-decoration: none;
-  color: #ffd200;
-  font-size: 1.5em;
-}
-.contactField a i, .contactField span i {
-  font-size: 2em;
-  padding-right: 10%;
-}
-.contactField a:hover {
-  color: #ffdf4a;
-}
-.contactField span:hover {
-  color: #ffdf4a;
-  cursor: pointer;
-}
-.contactField div {
-  padding-top: 10px;
-}
-
 @media only screen and (orientation: portrait) {
   .layerMenu {
     width: 90%;
@@ -80,10 +60,6 @@
   .oneBlock {
     padding-top: 1vh;
     padding-bottom: 1vh;
-  }
-
-  .contactField {
-    padding-top: 3vh;
   }
 
   #textMenu {

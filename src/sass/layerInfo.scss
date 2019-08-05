@@ -63,7 +63,7 @@
 	div {
 		position: relative;
 		height: 1.5vmax;
-		background-color: #ffd200;
+		background-color: #f50057;
 		font-size: 1.2vmax;
 		padding-right: 5%;
 	}
@@ -74,12 +74,8 @@
 	text-align: center;
 }
 
-.reddishColor {
-	color: #ffd200;
-	text-shadow: 1px 1px 1px black;
-}
 .whiteBar {
-	color: black;
+	color: white;
 	text-shadow: 1px 1px 1px white;
 }
 
@@ -123,10 +119,9 @@
 		}
 	}
 
-	.widthInfo {
-		width: 60vw;
-		margin-left: 10vw;
-		margin-right: 10vw;
+	.widthInfo {		
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.widthMain {

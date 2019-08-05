@@ -1,5 +1,12 @@
 #photoOfMe {
+  height: 64px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #photoOfMe {
+    height: 56px;
+  }
 }
 
 /*# sourceMappingURL=photo.css.map */

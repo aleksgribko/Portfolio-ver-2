@@ -51,7 +51,8 @@
          skills: [
              {skill: 'HTML', numbProj: 7},
              {skill: 'CSS (incl. SASS)', numbProj: 7},
-             {skill: 'Vanilla JavaScript ES6, jQuery', numbProj: 6},
+             {skill: 'Vanilla JavaScript ES6', numbProj: 6},
+             {skill: 'jQuery', numbProj: 6},
              {skill: 'Git, GitHub', numbProj: 7},
              {skill: 'React (hooks, material-ui)', numbProj: 3},
              {skill: 'Bootstrap 4', numbProj: 3},
@@ -61,8 +62,10 @@
              {skill: 'AJAX, JSON, API', numbProj: 1},           
              {skill: 'SQL, UML', numbProj: 1},   
              {skill: 'Jasmine (JS testing framework)', numbProj: 1},  
-         ]
-
+         ],
+         plannedSkills: ['Webpack', 'Babel', 'Jest', 'GraphQL', 'hot reload', 'Docker', 'Angular', 'Symfony', 'Jenkins'],
+         learningSkills: ['Node.js', 'Express.js', 'Redux', 'mongoBD (mongoose)', 'Gulp']
+    
     }   
 
    

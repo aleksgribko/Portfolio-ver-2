@@ -6,11 +6,12 @@
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",
     "animate.css": "^3.7.2",
-    "aos": "^2.3.4",
+    "aos": "^3.0.0-beta.6",
     "clipboard": "^2.0.4",
     "jquery": "^3.4.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.0.1",
     "wowjs": "^1.1.3"
   },

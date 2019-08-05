@@ -1,58 +1,33 @@
-import React, { useState } from 'react';
-import AllInfo from './components/AllInfo.js'
-import Contacts from './components/Contacts.js'
-import Projects from './components/Projects.js'
-import ScrollElement from './components/ScrollElement.js'
-import LayerInfo from './components/LayerInfo.js'
-//import ProjectGrid from './components/ProjectGrid.js'
-import $ from "jquery";
+import React, { useEffect } from 'react';
+import NavPanel from './components/NavPanel.js'
+import FirstPage from './components/FirstPage.js'
+import Technologies from './components/Technologies.js'
+
+import AboutMe from './components/AboutMe.js'
+import ProjectsSector from './components/ProjectsSector.js'
 
 import './css/App.css';
 
-function App() { 
+class App extends React.Component{  
+  constructor(props, context) { 
+    super(props, context); 
+      
+  } 
+    
 
-  // cool colors #FF003C #4ea1fd #890506
-
-  let [cardName, setCardName] = useState(null)
-  //let [vh, setVh] = useState(window.innerHeight * 0.01)
-
-  //window.addEventListener('resize', () => {
-  //  setVh(window.innerHeight * 0.01)
-  //})
-  function handleClickAway() {
-    $('.mainFull').addClass("mainCut")
-    $(".mainCut").removeClass("mainFull")
-    $("#blackLayer").css("display", "none");
-  }
-
-  function switchLayer(name) {
-    setCardName(name)
-  }
-
-  //  useEffect(() => {
-  //    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  //  })
-  
-  
+  render(){ 
   return (
     <div className="App" id="mainPagesFlow">
-      <Contacts />
-      <div id="project0back"></div>
-      <div id='project0' className='flex'>
-        <LayerInfo
-          getBackIndentificator={switchLayer}
-          cardName={cardName}
-        />
-        <AllInfo
-          switchLayer={switchLayer}
-          cardName={cardName}
-        />
-      </div>     
-      <Projects />
-      <ScrollElement />
-      <div onClick={() => handleClickAway()} id='blackLayer'></div>  
+      <NavPanel />      
+      <FirstPage />   
+      <AboutMe />    
+      <Technologies />         
+      <ProjectsSector />      
+       
     </div>
+
   );
+  }
 }
 
 export default App;

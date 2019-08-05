@@ -1,0 +1,29 @@
+.flex.navbar {
+  background-color: #00AA98;
+  display: none;
+}
+.flex.navbar span {
+  color: white;
+}
+
+#menuForPC {
+  display: block;
+}
+
+#menuForPhones {
+  display: none;
+  position: absolute;
+  right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #menuForPC {
+    display: none;
+  }
+
+  #menuForPhones {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=navPanel.css.map */

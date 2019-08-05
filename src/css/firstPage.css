@@ -1,0 +1,133 @@
+#firstPage {
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.mainPageBackground {
+  position: absolute;
+  background: linear-gradient(to right, #1eb6a4, #00AA98);
+  z-index: 0;
+}
+
+#firstPageText {
+  align-self: center;
+  z-index: 1;
+}
+
+#firstPagePhoto {
+  z-index: 1;
+}
+
+#photoOfMeMain {
+  height: 100%;
+}
+
+.helloText {
+  font-size: 3.1vmax;
+}
+
+.nameMain {
+  font-size: 3.8vmax;
+}
+
+.contactField a, .contactField span {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+.contactField a i, .contactField span i {
+  font-size: 2em;
+  padding-right: 10%;
+}
+.contactField a:hover {
+  color: #f50057;
+  cursor: pointer;
+}
+.contactField span:hover {
+  color: #f50057;
+  cursor: pointer;
+}
+.contactField div {
+  padding-top: 10px;
+}
+
+#helloInfo {
+  display: flex;
+  flex-direction: column;
+}
+#helloInfo div {
+  font-size: 1.2vmax;
+}
+
+@media only screen and (orientation: portrait) {
+  #firstPage {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #firstPagePhoto {
+    height: 40%;
+  }
+
+  #firstPageText {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .mainPageBackground {
+    height: 110vh;
+    width: 100vh;
+    transform: rotate(80deg);
+    top: -15%;
+    left: -20%;
+  }
+
+  .secondPartBackground {
+    top: 50vmax;
+  }
+
+  #helloInfo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (orientation: landscape) {
+  #firstPage {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #firstPagePhoto {
+    height: 100%;
+  }
+
+  .mainPageBackground {
+    height: 210vh;
+    width: 90vw;
+    transform: rotate(25deg) translate(-10%, -10%);
+    transform-origin: 0% 0%;
+  }
+
+  .secondPartBackground {
+    left: 90vmax;
+  }
+
+  .widthInfo {
+    width: 60vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .widthMain {
+    width: 50vw;
+  }
+}
+
+/*# sourceMappingURL=firstPage.css.map */

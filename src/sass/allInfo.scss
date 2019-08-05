@@ -52,27 +52,6 @@
 	}
 }
 
-.contactField {
-	a, span {
-		text-decoration: none;
-		color: #ffd200;
-		font-size: 1.5em;
-		i {
-			font-size: 2em;
-			padding-right: 10%;
-		}
-	}
-	a:hover {
-		color: #ffdf4a;
-	}
-	span:hover {
-		color: #ffdf4a;
-		cursor: pointer;
-	}
-	div {
-		padding-top: 10px;
-	}
-}
 
 @media only screen and (orientation: portrait) {
 	.layerMenu {
@@ -84,9 +63,7 @@
 		padding-top: 1vh;
 		padding-bottom: 1vh;
 	}
-	.contactField {
-		padding-top: 3vh;
-	}
+	
 
 	#textMenu {
 		font-size: 1.4vmax;

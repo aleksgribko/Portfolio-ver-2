@@ -105,7 +105,7 @@ const projectsData = [
         ],
         git: 'https://github.com/Alezh89/portfolio',
         site: 'https://agribko.netlify.com',
-        description: `This website portfolio that is result of my latest activity and practice. 
+        description: `First version of this website portfolio that is result of my latest activity and practice. 
         Here I collected examples of my work and used my ReactJS knowledge`,       
         pictureText: [
             'Wide width devices view',

@@ -1,0 +1,27 @@
+.MuiChip-label{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 780px) {
+    .MuiChip-label{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .MuiChip-label{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .MuiChip-label{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .MuiChip-label{
+        font-size: 0.7rem;
+    }
+}
