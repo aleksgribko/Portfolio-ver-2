@@ -48,7 +48,7 @@ const useStyles = makeStyles(theme => ({
         transform: 'translate(100%, 5%)',
     },
     chip: {
-        margin: theme.spacing(0.5),
+        margin: theme.spacing(0.7),
     },
     avatar: {
         backgroundColor: '#f50057',
