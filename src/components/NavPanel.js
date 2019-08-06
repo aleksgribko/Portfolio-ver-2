@@ -5,7 +5,7 @@ import Clipboard from "clipboard";
 import Photo from "./Photo.js";
 import $ from "jquery";
 import Tooltip from "@material-ui/core/Tooltip";
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import Snackbar from '@material-ui/core/Snackbar';
 
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -60,15 +60,27 @@ const useStyles = makeStyles(theme => ({
 
 export default function NavPanel() {
 	const classes = useStyles();
-	const [open, setOpen] = useState(false);
 	const [anchorEl, setAnchorEl] = useState(null);
+	const [snackbar, setSnackbar] = useState({
+        open: false,
+        vertical: 'top',
+        horizontal: 'center',
+      });
+
+    const { vertical, horizontal, open } = snackbar;
+
+    const openSnackbar = newState => () => {
+        setSnackbar({ open: true, ...newState });
+    };
+
+    function closeSnackbar() {
+        setSnackbar({ ...snackbar, open: false });
+    }
 
 	useEffect(() => {
-		let btns = document.getElementById("btnCopy1");
-		new Clipboard(btns);
+		
+		new Clipboard('.btns');		
 	});
-
-	console.log(open, anchorEl)
 
 	return (
 		<div className={classes.root}>
@@ -93,25 +105,22 @@ export default function NavPanel() {
 							keepMounted
 							open={Boolean(anchorEl)}
 							onClose={() => setAnchorEl(null)}
-						>
-							<MenuItem onClick={() => { document.getElementById('emailBtn').click(); setAnchorEl(null) }}>Gmail</MenuItem>
+						>							
 							<MenuItem onClick={() => { document.getElementById('gitBtn').click(); setAnchorEl(null) }}>Github</MenuItem>
 							<MenuItem onClick={() => { document.getElementById('twitterBtn').click(); setAnchorEl(null) }}>Twitter</MenuItem>
 							<MenuItem onClick={() => { document.getElementById('linkBtn').click(); setAnchorEl(null) }}>LinkedIn</MenuItem>
 						</Menu>
-					</div>
-
+					</div>			
 					<div className={classes.buttonsMenu} id='menuForPC'>
-
 						<Tooltip
 							placement="bottom"
 							disableFocusListener
 							title="Click to copy"
 						>
 							<Button
-								className="navItem"
-								id="btnCopy1"
-								onClick={() => setOpen(true)}
+								className="navItem btns"
+								id="btnCopy1"				
+								onClick={openSnackbar({ vertical: 'bottom', horizontal: 'center' })}				
 								data-clipboard-text="aleks.gribko@gmail.com"
 								target="_top"
 							>
@@ -146,6 +155,16 @@ export default function NavPanel() {
 					</div>
 				</Toolbar>
 			</AppBar >
+			<Snackbar
+                anchorOrigin={{ vertical, horizontal }}
+                key={`${vertical},${horizontal}`}
+                open={open}
+                onClose={closeSnackbar}
+                ContentProps={{
+                'aria-describedby': 'message-id2',
+                }}
+                message={<span id="message-id2">aleks.gribko@gmail.com has been copied</span>}
+            />
 			<div className="arrowDown" onClick={() =>
 				window.scrollTo({
 					top: $('#aboutSection').position().top,

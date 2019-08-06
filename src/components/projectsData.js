@@ -90,7 +90,7 @@ const projectsData = [
 
     {
         id: 'project4',
-        name: "Portfolio",
+        name: "Portfolio v 1",
         what: 'Mobile & desktop site',
         technologies: [
             'ReactJS (with styled components)',    

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import NavPanel from './components/NavPanel.js'
 import FirstPage from './components/FirstPage.js'
 import Technologies from './components/Technologies.js'
@@ -8,14 +8,8 @@ import ProjectsSector from './components/ProjectsSector.js'
 
 import './css/App.css';
 
-class App extends React.Component{  
-  constructor(props, context) { 
-    super(props, context); 
-      
-  } 
-    
-
-  render(){ 
+function App(){  
+        
   return (
     <div className="App" id="mainPagesFlow">
       <NavPanel />      
@@ -27,7 +21,7 @@ class App extends React.Component{
     </div>
 
   );
-  }
+  
 }
 
 export default App;

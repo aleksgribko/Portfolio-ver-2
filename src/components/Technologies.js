@@ -48,6 +48,7 @@ const useStyles = makeStyles(theme => ({
         borderWidth: '0 0 15px 0',
         width: '15vw',
         marginTop: '3vh',
+        marginBottom: theme.spacing(4),
     },
 }));
 

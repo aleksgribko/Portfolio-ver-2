@@ -64,6 +64,7 @@ const useStyles = makeStyles(theme => ({
     borderWidth: '0 0 15px 0',
     width: '15vw',
     marginTop: '3vh',
+    marginBottom: theme.spacing(4),
   },
 }));
 
@@ -148,13 +149,13 @@ export default function ProjectsSector() {
               </CardActionArea>
               <Grid container alignItems="flex-end">
                 <Grid item >
-                  <CardActions>
-                    <Button size="small" href={project.git} style={{ display: `${project.git ? "" : "none"}`, 'color': "#00AA98" }}>
-                      website link
-              </Button>
+                  <CardActions>                    
                     <Button size="small" href={project.site} style={{ display: `${project.site ? "" : "none"}`, 'color': "#00AA98" }}>
+                      website link
+                    </Button>
+                    <Button size="small" href={project.git} style={{ display: `${project.git ? "" : "none"}`, 'color': "#00AA98" }}>
                       git link
-              </Button>
+                    </Button>
                   </CardActions>
                 </Grid>
               </Grid>

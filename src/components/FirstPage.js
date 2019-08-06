@@ -3,6 +3,7 @@ import "../css/firstPage.css";
 import $ from "jquery";
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import Snackbar from '@material-ui/core/Snackbar';
 
 import Clipboard from "clipboard";
 
@@ -20,8 +21,22 @@ const useStyles = makeStyles(theme => ({
 
 export default function FirstPage() {
     const classes = useStyles();
-    const [open, setOpen] = useState(null);
- 
+    const [snackbar, setSnackbar] = useState({
+        open: false,
+        vertical: 'top',
+        horizontal: 'center',
+      });
+
+      const { vertical, horizontal, open } = snackbar;
+
+    const openSnackbar = newState => () => {
+        setSnackbar({ open: true, ...newState });
+    };
+
+    function closeSnackbar() {
+        setSnackbar({ ...snackbar, open: false });
+    }
+    
     useEffect(() => {
         let btns = document.getElementById("btnCopy2");
         new Clipboard(btns);
@@ -103,17 +118,28 @@ export default function FirstPage() {
                                         <Button
                                             id="btnCopy2"
                                             data-clipboard-text="aleks.gribko@gmail.com"
-                                           
+                                            onClick={openSnackbar({ vertical: 'bottom', horizontal: 'center' })}
                                             className=" animated slideInRight contactButton"
                                         >
                                             aleks.gribko@gmail.com
 										</Button>
                                     </Tooltip>
+                                   
                                 
                         </div>
                     </div>
                 </div>
             </div>
+            <Snackbar
+                anchorOrigin={{ vertical, horizontal }}
+                key={`${vertical},${horizontal}`}
+                open={open}
+                onClose={closeSnackbar}
+                ContentProps={{
+                'aria-describedby': 'message-id',
+                }}
+                message={<span id="message-id">aleks.gribko@gmail.com has been copied</span>}
+            />
             <div id='firstPagePhoto' className='animated slideInRight'>
                 <img
                     id="photoOfMeMain"

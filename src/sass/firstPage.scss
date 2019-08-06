@@ -60,13 +60,6 @@
 	}
 }
 
-#helloInfo {
-	display: flex;
-	flex-direction: column;
-	div {
-		font-size: 1.2vmax;
-	}
-}
 
 @media only screen and (orientation: portrait) {
 
@@ -84,25 +77,36 @@
         margin-bottom: auto;          
     }
 
+    .nameMain{    
+        font-size: 5.2vmax;
+        margin-block-end: 0.7em;
+    }
+
+    .helloText{
+        font-size: 2.8vmax;
+    }
+
+    .contactField {
+        a, span {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            
+        }        
+    }    
     
 
     .mainPageBackground {          
-        height: 110vh;
-        width: 100vh;    
-        transform: rotate(80deg);
-        top:-15%;
-        left: -20%;   	
+        height: 130vh;
+        width: 170vh;    
+        transform: rotate(80deg) translate(5%, -10%);
+         	
     }
 
     .secondPartBackground{
-        top: 50vmax;
+        top: 70vh;
     }
-
-	#helloInfo {
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}   	
+		
 }
 
 @media only screen and (orientation: landscape) {
