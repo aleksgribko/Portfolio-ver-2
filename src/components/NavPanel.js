@@ -42,6 +42,8 @@ window.addEventListener(
 
 		$('#photoOfMeMain').css('transform', `translateX(${scrollTop / 8}px)`)
 		$('#firstPageText').css('transform', `translateX(-${scrollTop / 8}px)`)
+		$('#specChar').css('transform', `translateY(-${scrollTop}px)`)
+		
 
 	})
 

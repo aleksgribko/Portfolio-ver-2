@@ -19,6 +19,7 @@
 #firstPageText{
     align-self: center;
     z-index: 1;
+
 }
 
 #firstPagePhoto{   
@@ -60,6 +61,14 @@
 	}
 }
 
+#specChar{ 
+   position: absolute;
+   padding-top: 30vmax;
+   padding-right: 20vmax;
+   color: #00AA98;
+    font-size: 15vmax;
+}
+
 
 @media only screen and (orientation: portrait) {
 
@@ -74,7 +83,8 @@
 
     #firstPageText{
         margin-top: auto;
-        margin-bottom: auto;          
+        margin-bottom: auto;    
+        margin-left: 5vw;
     }
 
     .nameMain{    
@@ -104,8 +114,14 @@
     }
 
     .secondPartBackground{
-        top: 70vh;
+        top: 73vh;
     }
+
+    #specChar{ 
+        padding-bottom: 100vmax;        
+        padding-top: 35vmax;
+        padding-right: 100vmax;
+     }
 		
 }
 
@@ -123,7 +139,7 @@
     .mainPageBackground {          
         height: 210vh;
         width: 90vw;    
-        transform: rotate(25deg) translate(-10%, -10%);
+        transform: rotate(24deg) translate(-10%, -10%);
         transform-origin:0% 0%;          
     }
 

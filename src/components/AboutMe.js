@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     title: {
         marginLeft: theme.spacing(1),
         width: '100%',
-        fontSize: '7vmax',
+        fontSize: '4.5vmax',
         color: 'white',
     },
     root: {
@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
     },
     bar: {
         marginTop: theme.spacing(2),
-        height: '7vmax',
+        height: '4.5vmax',
         width: '100%',
         backgroundColor: '#00AA98',
     },
@@ -160,7 +160,7 @@ export default function AboutMe() {
                                             </Grid>
                                             <Grid item xs={12}>
                                                 <Typography variant="h5" component="h2" className={classes.nameCard}>
-                                                    Bachelor
+                                                    Bachelor's degree
                             </Typography>
                                             </Grid>
                                             <Grid item xs={12}>

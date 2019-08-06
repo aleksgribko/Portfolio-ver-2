@@ -8,7 +8,6 @@ import Snackbar from '@material-ui/core/Snackbar';
 import Clipboard from "clipboard";
 
 import Tooltip from "@material-ui/core/Tooltip";
-import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -27,7 +26,7 @@ export default function FirstPage() {
         horizontal: 'center',
       });
 
-      const { vertical, horizontal, open } = snackbar;
+    const { vertical, horizontal, open } = snackbar;
 
     const openSnackbar = newState => () => {
         setSnackbar({ open: true, ...newState });
@@ -45,7 +44,72 @@ export default function FirstPage() {
     return (
         <div id="firstPage">
             <div className="mainPageBackground"></div>
-            <div className="mainPageBackground secondPartBackground"></div>
+            <div className="mainPageBackground secondPartBackground">
+                 <span id='specChar'>&#32;
+                    &#33;
+                    &#34;
+                    &#35;
+                    &#36;
+                    &#37;
+                    &#38;
+                    &#39;
+                    &#40;
+                    &#41;
+                    &#42;
+                    &#43;
+                    &#44;
+                    &#45;
+                    &#46;
+                    &#47;
+                    &#58;
+                    &#59;
+                    &#60;
+                    &#61;
+                    &#62;
+                    &#63;
+                    &#32;
+                    &#33;
+                    &#34;
+                    &#35;
+                    &#36;
+                    &#37;
+                    &#38;
+                    &#39;
+                    &#40;
+                    &#41;
+                    &#42;
+                    &#43;
+                    &#44;
+                    &#45;
+                    &#46;
+                    &#47;
+                    &#58;
+                    &#59;
+                    &#60;
+                    &#61;
+                    &#62;
+                    &#63;
+                    &#34;
+                    &#35;
+                    &#36;
+                    &#37;
+                    &#38;
+                    &#39;
+                    &#40;
+                    &#41;
+                    &#42;
+                    &#43;
+                    &#44;
+                    &#45;
+                    &#46;
+                    &#47;
+                    &#58;
+                    &#59;
+                    &#60;
+                    &#61;
+                    &#62;
+                    &#63;</span>
+            </div>
             <div id='firstPageText' style={{ color: "white" }}>
                 <div style={{ 'paddingTop': 'auto', 'paddingBottom': 'auto' }}>
                     <p className="animated slideInLeft nameMain" >

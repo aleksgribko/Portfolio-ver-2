@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
 	title: {
 		marginLeft: theme.spacing(1),
 		width: '100%',	
-		fontSize: '7vmax',
+		fontSize: '4.5vmax',
 		color: 'white',
 	},
 	subtitle: {
@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
 	},
 	bar: {
         marginTop: theme.spacing(2),
-        height: '7vmax',
+        height: '4.5vmax',
         width: '100%',
         backgroundColor: '#00AA98',
     },
