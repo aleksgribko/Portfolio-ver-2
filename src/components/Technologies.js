@@ -79,7 +79,7 @@ export default function Technologies() {
 			</Reveal>
 			<Reveal effect="fadeInUp">
 			<Typography variant="h5" component="h5" className={classes.subtitle}>
-				I learn
+				I am learning
             </Typography>
 			<div className={classes.chips}>
 				{skills.learningSkills.map(oneSkill => (
@@ -89,7 +89,7 @@ export default function Technologies() {
 			</Reveal>
 			<Reveal effect="fadeInUp">
 			<Typography variant="h5" component="h5" className={classes.subtitle}>
-				I am planning to learn
+				I planned to learn
             </Typography>
 			<div className={classes.chips}>
 				{skills.plannedSkills.map(oneSkill => (

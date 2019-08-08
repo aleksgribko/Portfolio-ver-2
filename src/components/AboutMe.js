@@ -127,21 +127,11 @@ export default function AboutMe() {
                     <Reveal effect="fadeInUp">
                     <Grid item className={classes.gridItem}>
                         <p className={classes.textAboutMe}>
-                            Being devoted and motivated with ever-lasting curiosity
-                                to learn something new, my experience has always been connected to the technical field. 
-                                As I became more familiar with new technologies, my drive to acquire and master technical skills increased.
-                                I am thrilled to work in a team of bright people who work with modern frameworks on challenging projects.                                  
-                                I have successfully earned my bachelor’s degree equivalent as a Front-End Developer and am ready to be part of a development team. 
-                                My favorite tools are JS ES6, ReactJS, CSS and different design libraries.
+                        Being devoted and motivated with ever-lasting curiosity to learn something new, my experience has always been connected to the technical field. As I became more familiar with new technologies, my drive to acquire and master technical skills increased. I am thrilled when I have the opportunity to work on teams with bright people who apply modern frameworks to challenging projects. I have successfully earned my bachelor’s degree equivalent as a Front-End Developer and am ready to be part of a development team. My favorite tools are JS ES6, ReactJS, CSS and different design libraries.
 					</p>
 
                         <p className={classes.textAboutMe}>
-                            Full of ideas, working both within a team and on my own, autonomous.
-                            The priority for me is the best UX and responsive design. I want to share
-                            with my team my help, devotion, and interest in making innovations in web
-                            development. In the IT world changes are happening every day and I feel
-                                excited to follow these changes and keep this fast pace in acquiring new technical skills. That is why last year I was so excited to start my
-                                career change by working on front-end projects under mentors' control.
+                        I’m full of ideas and enjoy working both within a team and on my own. The priority for me is the best UX, UI and responsive design. I want to share with my team my desire to help, my devotion and interest in creating innovative web applications. In the IT world changes happen every day and I am excited to adapt to these changes while keeping up with the fast-paced nature of the field. That is why last year I was so excited to transition into development and begin working on front-end projects.
 					</p>
                     </Grid>
                     </Reveal>
