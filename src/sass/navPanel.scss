@@ -1,26 +1,29 @@
 .flex.navbar {
-	background-color: #00AA98;
-	display: none;
-	span{
-	color: white;
-	}
-
+  background-color: #00aa98;
+  display: none;
+  span {
+    color: white;
+  }
 }
 
-#menuForPC{
-	display: block;
+.arrowDown {
+  cursor: pointer;
 }
-#menuForPhones{
-	display: none;
-	position: absolute;
-    right: 10px;
+
+#menuForPC {
+  display: block;
+}
+#menuForPhones {
+  display: none;
+  position: absolute;
+  right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
-    #menuForPC{
-		display: none;
-	}
-	#menuForPhones{
-		display: block;
-	}
+  #menuForPC {
+    display: none;
+  }
+  #menuForPhones {
+    display: block;
+  }
 }

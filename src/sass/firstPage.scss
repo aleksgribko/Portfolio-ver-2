@@ -1,161 +1,156 @@
 #firstPage {
-    color: white;	
-    display: flex;	
-    width: 100%;
-    height: 100vh;
-    justify-content: space-evenly;
-    overflow:hidden;
-    position: relative;   
-    align-items: center;
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
 }
 
 //0869cc
 .mainPageBackground {
-	position: absolute;	
-	background: linear-gradient(to right, #1eb6a4, #00AA98) ;	
-	z-index: 0;         	
+  position: absolute;
+  background: linear-gradient(to right, #1eb6a4, #00aa98);
+  z-index: 0;
 }
 
-#firstPageText{
-    align-self: center;
-    z-index: 1;
-
+#firstPageText {
+  align-self: center;
+  z-index: 1;
 }
 
-#firstPagePhoto{   
-    z-index: 1;
+#firstPagePhoto {
+  z-index: 1;
 }
 
-#photoOfMeMain{
-    height: 100%;
+#photoOfMeMain {
+  height: 100%;
 }
 
-.helloText{
-    font-size: 3.1vmax;
+.helloText {
+  font-size: 3.1vmax;
 }
 
-.nameMain{    
-    font-size: 3.8vmax;
+.nameMain {
+  font-size: 3.8vmax;
 }
 
 .contactField {
-	a, span {
-		text-decoration: none;
-		color: white;
-		font-size: 1.5em;
-		i {
-			font-size: 2em;
-			padding-right: 10%;
-		}
-	}
-	a:hover {
-        color: #f50057;
-        cursor: pointer;
-	}
-	span:hover {
-		color: #f50057;
-		cursor: pointer;
-	}
-	div {
-		padding-top: 10px;
-	}
+  a,
+  span {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    i {
+      font-size: 2em;
+      padding-right: 10%;
+    }
+  }
+  a:hover {
+    color: #f50057;
+    cursor: pointer;
+  }
+  span:hover {
+    color: #f50057;
+    cursor: pointer;
+  }
+  div {
+    padding-top: 10px;
+  }
 }
 
-#specChar{ 
-   position: absolute;
-   padding-top: 30vmax;
-   padding-right: 20vmax;
-   color: #00AA98;
-    font-size: 15vmax;
+#specChar {
+  position: absolute;
+  padding-top: 30vmax;
+  padding-right: 20vmax;
+  color: #00aa98;
+  font-size: 15vmax;
 }
-
 
 @media only screen and (orientation: portrait) {
+  #firstPage {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    #firstPage {
-        flex-direction: column;	
-        justify-content: center;
+  #firstPagePhoto {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #firstPageText {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5vw;
+  }
+
+  .nameMain {
+    font-size: 5.2vmax;
+    margin-block-end: 0.7em;
+  }
+
+  .helloText {
+    font-size: 2.8vmax;
+  }
+
+  .contactField {
+    a,
+    span {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
     }
+  }
 
-    #firstPagePhoto{
-        height: 40%;    
-    }
+  .mainPageBackground {
+    height: 130vh;
+    width: 170vh;
+    transform: rotate(80deg) translate(5%, -10%);
+  }
 
-    #firstPageText{
-        margin-top: auto;
-        margin-bottom: auto;    
-        margin-left: 5vw;
-    }
+  .secondPartBackground {
+    top: 73vh;
+  }
 
-    .nameMain{    
-        font-size: 5.2vmax;
-        margin-block-end: 0.7em;
-    }
-
-    .helloText{
-        font-size: 2.8vmax;
-    }
-
-    .contactField {
-        a, span {
-            text-decoration: none;
-            color: white;
-            font-size: 1.2em;
-            
-        }        
-    }    
-    
-
-    .mainPageBackground {          
-        height: 130vh;
-        width: 170vh;    
-        transform: rotate(80deg) translate(5%, -10%);
-         	
-    }
-
-    .secondPartBackground{
-        top: 73vh;
-    }
-
-    #specChar{ 
-        padding-bottom: 100vmax;        
-        padding-top: 35vmax;
-        padding-right: 100vmax;
-     }
-		
+  #specChar {
+    padding-bottom: 100vmax;
+    padding-top: 35vmax;
+    padding-right: 100vmax;
+  }
 }
 
 @media only screen and (orientation: landscape) {
+  #firstPage {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    #firstPage {
-        flex-direction: row;	
-        justify-content: space-evenly;
-    }
+  #firstPagePhoto {
+    height: 100%;
+  }
 
-    #firstPagePhoto{
-        height: 100%;    
-    }
+  .mainPageBackground {
+    height: 210vh;
+    width: 90vw;
+    transform: rotate(24deg) translate(-10%, -10%);
+    transform-origin: 0% 0%;
+  }
 
-    .mainPageBackground {          
-        height: 210vh;
-        width: 90vw;    
-        transform: rotate(24deg) translate(-10%, -10%);
-        transform-origin:0% 0%;          
-    }
+  .secondPartBackground {
+    left: 90vmax;
+  }
 
-    .secondPartBackground{
-        left: 90vmax;
-    }
-	
-	.widthInfo {
-		width: 60vw;
-		margin-left: 10vw;
-		margin-right: 10vw;
-	}
+  .widthInfo {
+    width: 60vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 
-	.widthMain {
-		width: 50vw;
-	}
-
-	
+  .widthMain {
+    width: 50vw;
+  }
 }
