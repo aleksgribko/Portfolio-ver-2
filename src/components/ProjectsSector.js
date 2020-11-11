@@ -101,7 +101,7 @@ export default function ProjectsSector() {
       (proj) =>
         proj.id === "project1" ||
         proj.id === "project2" ||
-        proj.id === "project3"
+        proj.id === "project10"
     );
   } else {
     projects = projectsData;
@@ -118,7 +118,7 @@ export default function ProjectsSector() {
           <React.Fragment>
             <div className={classes.bar}>
               <Typography variant="h2" component="h3" className={classes.title}>
-                First Projects
+                Personal Projects
               </Typography>
             </div>
             <div className={classes.underline}></div>

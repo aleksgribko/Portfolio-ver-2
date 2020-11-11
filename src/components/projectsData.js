@@ -17,8 +17,8 @@ const projectsData = [
             'Detailing project specifications',
             'Listing functionalities requested by the client'
         ],
-        git: 'https://github.com/Alezh89/filmfestbrooklyn.com',
-        site: 'https://alezh89.github.io/filmfestbrooklyn.com/',
+        git: 'https://github.com/aleksgribko/filmfestbrooklyn.com',
+        site: 'https://aleksgribko.github.io/filmfestbrooklyn.com/',
         description: `A website made on the client description. Users suppose to be able to register them for the festival.
         Tasks were to create the project brief and specification.`,
         pictureText: [
@@ -45,8 +45,8 @@ const projectsData = [
             'Designing reusable JavaScript application architecture',
             'Developing an object-oriented JavaScript application',           
         ],
-        git: 'https://github.com/Alezh89/war-board-game',
-        site: 'https://alezh89.github.io/war-board-game/',
+        git: 'https://github.com/aleksgribko/war-board-game',
+        site: 'https://aleksgribko.github.io/war-board-game/',
         description: `The turn-based strategy where two players by means of weapons and other items try to win by making to the other player 100 damage points.
         Each player can move up to 3 cells horizontally or vertically, except if there is a hindrance, then movements are limited.
         From the beggining, each player has the following points: 5 to attack with fists and 100 health. Each player can improve his attack points by collecting weapons.`,    
@@ -75,7 +75,7 @@ const projectsData = [
             'Debugging an application using DevTools', 
             'Using ReactJS library a project'          
         ],
-        git: 'https://github.com/Alezh89/Restaurant-review-site-on-React-',
+        git: 'https://github.com/aleksgribko/Restaurant-review-site-on-React-',
         site: 'https://restaurantsaround.netlify.com',
         description: `A restaurant review site with google maps API. One side of the website is the map with (1) featured restaurants 
         (with a JSON file) and (2) restaurants around the user. Another side is a list of all restaurants: featured and found for the user. 
@@ -103,8 +103,8 @@ const projectsData = [
             'Implementing new instruments (SASS, React styled components)',
             'Making a modern and responsive web design',           
         ],
-        git: 'https://github.com/Alezh89/portfolio',
-        site: 'https://agribko.netlify.com',
+        git: 'https://github.com/aleksgribko/portfolio',
+        site: '',
         description: `First version of this website portfolio that is result of my latest activity and practice. 
         Here I collected examples of my work and used my ReactJS knowledge`,       
         pictureText: [
@@ -150,7 +150,7 @@ const projectsData = [
             'Designing a database schema',
             'Using a schema when designing a database',           
         ],
-        git: 'https://github.com/Alezh89/UML-SQL',
+        git: 'https://github.com/aleksgribko/UML-SQL',
         site: '',
         description: `A technical solution for a young startup that delivers their own high-quality meals to residences with their delivery team.
         Every day, they create 2 main dishes and 2 desserts. These 2 main dishes are stored and then given to delivery people who bike to the food to the residence. 
@@ -177,7 +177,7 @@ const projectsData = [
             'Implement unit and functional tests in a web application',
             'Take over an existing JavaScript project',           
         ],
-        git: 'https://github.com/Alezh89/Todo-list',
+        git: 'https://github.com/aleksgribko/Todo-list',
         site: '',
         description: `The given app 'to-do list' written with bugs had to be tested and fixed. 
         Also, recommendations on the rendering speed were given. Technical documentation was written for this project.`,       
@@ -200,8 +200,8 @@ const projectsData = [
             'Designing an algorithm to meet a specification',
             'Implementing the JavaScript syntax in a program',                  
         ],
-        git: 'https://github.com/Alezh89/quotegenerator',
-        site: 'https://alezh89.github.io/quotegenerator/',
+        git: 'https://github.com/aleksgribko/quotegenerator',
+        site: 'https://aleksgribko.github.io/quotegenerator/',
         description: `A random quote generator of 2 types: (1) Where the quotes will be randomly constructed 
         by assembling different pieces of a sentence, and (2) With movie quotes. In each case, a user can choose the number 
         of quotes (up to 5).`,       
@@ -224,13 +224,36 @@ const projectsData = [
             'Designing an algorithm to meet a specification',
             'Making responsive and interactive react based movie grid',                  
         ],
-        git: 'https://github.com/Alezh89/Movie-grid-with-react',
+        git: 'https://github.com/aleksgribko/Movie-grid-with-react',
         site: 'https://movie-grid-react.netlify.com',
         description: `Responsive and interactive movie grid. Movies can be shown as 4, 8 or 12 per page, deleted and liked/disliked. There is pagination.`,       
         pictureText: [
             'Wide width devices view',
             'Mobile devices view'
         ] 
+    },
+    {
+        id: 'project10',
+        name: "Bélarus en France",
+        what: 'Mobile & desktop site',
+        technologies: [
+            'WebFlow', 
+            'CSS', 
+            'CRM'
+        ],
+        skills: [
+            'Making a modern and responsive web design',
+            'Managing CMS-driven content',
+            'Making multi-language pages'
+        ],
+        git: '',
+        site: 'https://www.belarusenfrance.fr/',
+        description: `A website made in WebFlow for belarusian diaspora in France`,
+        pictureText: [
+            'Wide width devices view',
+            'Mobile devices view'
+        ]
+              
     },
 
     ];

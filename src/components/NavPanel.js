@@ -156,7 +156,7 @@ export default function NavPanel() {
             <Button
               id="gitBtn"
               style={{ color: "white" }}
-              href="https://github.com/Alezh89"
+              href="https://github.com/aleksgribko"
             >
               github
             </Button>
@@ -164,7 +164,7 @@ export default function NavPanel() {
             <Button
               id="twitterBtn"
               style={{ color: "white" }}
-              href="https://twitter.com/Alezh89"
+              href="https://twitter.com/@aleks_gribko"
             >
               twitter
             </Button>

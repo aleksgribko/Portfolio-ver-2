@@ -113,13 +113,13 @@ export default function FirstPage() {
             </a>
             <a
               className="contactButton animated slideInRight"
-              href="https://twitter.com/Alezh89"
+              href="https://twitter.com/@aleks_gribko"
             >
               <i className="fab fa-twitter" />
             </a>
             <a
               className="contactButton animated slideInRight"
-              href="https://github.com/Alezh89"
+              href="https://github.com/aleksgribko"
             >
               <i className="fab fa-github" />
             </a>
