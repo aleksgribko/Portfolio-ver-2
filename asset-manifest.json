@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio-ver-2/static/css/main.532f5c23.chunk.css",
+    "main.js": "/Portfolio-ver-2/static/js/main.06d3f8d6.chunk.js",
+    "main.js.map": "/Portfolio-ver-2/static/js/main.06d3f8d6.chunk.js.map",
+    "runtime-main.js": "/Portfolio-ver-2/static/js/runtime-main.e83f38f8.js",
+    "runtime-main.js.map": "/Portfolio-ver-2/static/js/runtime-main.e83f38f8.js.map",
+    "static/js/2.fb112774.chunk.js": "/Portfolio-ver-2/static/js/2.fb112774.chunk.js",
+    "static/js/2.fb112774.chunk.js.map": "/Portfolio-ver-2/static/js/2.fb112774.chunk.js.map",
+    "index.html": "/Portfolio-ver-2/index.html",
+    "static/css/main.532f5c23.chunk.css.map": "/Portfolio-ver-2/static/css/main.532f5c23.chunk.css.map",
+    "static/js/2.fb112774.chunk.js.LICENSE.txt": "/Portfolio-ver-2/static/js/2.fb112774.chunk.js.LICENSE.txt",
+    "static/media/CV_AleksandrGribko.pdf": "/Portfolio-ver-2/static/media/CV_AleksandrGribko.96dcec67.pdf",
+    "static/media/IMG_5310.5db203b4.jpg": "/Portfolio-ver-2/static/media/IMG_5310.5db203b4.jpg",
+    "static/media/mainCut.jpg": "/Portfolio-ver-2/static/media/mainCut.ea7fd0a8.jpg",
+    "static/media/mainGreen.ee8b8d32.png": "/Portfolio-ver-2/static/media/mainGreen.ee8b8d32.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e83f38f8.js",
+    "static/js/2.fb112774.chunk.js",
+    "static/css/main.532f5c23.chunk.css",
+    "static/js/main.06d3f8d6.chunk.js"
+  ]
+}
