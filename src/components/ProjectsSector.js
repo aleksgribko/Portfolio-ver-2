@@ -153,7 +153,7 @@ export default function ProjectsSector() {
                   <CardActionArea onClick={() => openInfoHandler(project)}>
                     <CardMedia
                       className={classes.media}
-                      image={require(`./../materials/${project.id}/mainCut.jpg`)}
+                      image={require(`./../materials/${project.id}/mainCut.jpg`).default}
                       title={project.id}
                     />
                     <CardContent>

@@ -1,8 +1,9 @@
 import React from "react";
 import "../sass/photo.scss";
+import imageOfMe from "./../materials/IMG_5310.jpg"
 
 export default function Photo(props) {
   return (
-    <img id="photoOfMe" src={require("./../materials/IMG_5310.jpg")} alt="me" />
+    <img id="photoOfMe" src={imageOfMe} alt="me" />
   );
 }
